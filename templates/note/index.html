@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>
+        {{fname}}               {{lname}}
+        
+    </h1>
+    <form action="e" method="post" >
+        {% csrf_token %}
+        <button type="submit">aa</button>
+    </form>
+    <div id="shit"></div>
+    <script src="{% static 'js/s.js' %}"></script>
+</body>
+</html>
